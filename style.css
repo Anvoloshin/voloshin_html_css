@@ -1,0 +1,254 @@
+p {
+  font-weight: bold;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+dd {
+  width: 300px;
+}
+
+.margin {
+  margin-bottom: 20px;
+}
+
+
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table_one th, td {
+  border: 1px solid black;
+}
+
+.table_one td {
+  text-align: left;
+  padding: 20px 20px 20px 0px;
+}
+
+.table_one th {
+  padding: 20px;
+}
+
+
+
+.table_three {
+  width: 500px;
+}
+
+.table_three th {
+  border: 1px solid black;
+}
+
+.table_three td {
+  text-align: center;
+}
+
+
+
+.text {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.normal {
+  white-space: normal;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.pre {
+  white-space: pre;
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
+
+
+
+.border {
+  border: 1px solid black;
+}
+
+.p {
+  height: 50px;
+}
+
+.div {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.span {
+  display: inline-block; 
+  height: 50px;
+  width: 150px;
+}
+
+.h3 {
+  height: 50px;
+}
+
+.button {
+  height: 50px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.section {
+  display: inline-block;
+  height: 50px;
+  width: 150px;
+}
+
+
+
+.section_six div p {
+  background-color: aqua;
+}
+
+.section_six div h2 {
+  background-color: chartreuse;
+}
+
+#test p {
+  background-color: crimson;
+}
+
+#test h2 {
+  background-color: darkgoldenrod;
+}
+
+.bbb {
+  background-color: slateblue;
+}
+
+#test > .bbb {
+  background-color: darkgreen;
+}
+
+
+
+[data-value='45'] {
+  background-color: darkseagreen;
+}
+
+.parent1 > .child1 {
+  background-color: orangered;
+}
+
+.text1 + .active {
+  background-color: peru;
+}
+
+
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(34, 180, 29);
+  position: relative;
+}
+
+.child_1, .child_3, .child_4 {
+  margin: 30px;
+  width: 170px;
+  height: 170px;
+  border: 3px solid rgb(192, 184, 184);
+  background-color: rgb(166, 24, 209);
+  position: static;
+}
+
+.child_2 {
+  margin: 30px;
+  width: 170px;
+  height: 170px;
+  top: 50px;
+  left: 50px;
+  border: 3px solid rgb(192, 184, 184);
+  background-color: rgb(166, 24, 209);
+  position: relative;
+}
+
+
+
+.image {
+  background-image: url(/image/905f12cb69d76bf440276c45dcc56cff.jpeg);
+  width: 600px;
+  height: 400px;
+  position: relative;;
+}
+
+.superman {
+  position: absolute;
+  top: 329px;
+  right: 35px;
+}
+
+.potato {
+  position: absolute;
+  right: 110px;
+  top: 80px;
+}
+
+.blue-planet {
+  position: absolute;
+  left: 175px;
+  top: 20px
+}
+
+.purple-planet {
+  position: absolute;
+  left: 45px;
+  top: 65px
+}
+
+.rocket {
+  position: absolute;
+  left: 130px;
+  top: 160px
+}
+
+.yellow_planet {
+  position: absolute;
+  left: 130px;
+  top: 140px
+}
+
+.ufo {
+  position: absolute;
+  left: 100px;
+  top: 280px
+}
+
+
+
+.left_block {
+  margin: 30px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  border: 5px solid black;
+  box-sizing: content-box;
+}
+
+.right_block {
+  margin: 30px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  border: 5px solid black;
+  box-sizing: border-box;
+}
