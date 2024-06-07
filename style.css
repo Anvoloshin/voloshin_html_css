@@ -97,6 +97,8 @@ table {
 
 /* Секция 5*/
 
+
+/* ширину секции задать*/
 .p {
   height: 50px;
 }
@@ -445,8 +447,6 @@ h1 + p {
 
 /*  Секция 10 */
 
-
-
 .footer__body {
   display: flex;
   justify-content: space-between;
@@ -462,9 +462,6 @@ h1 + p {
 
 .body__text {
   margin: 10px;
-}
-
-.body__text_bold {
   font-weight: bold;
 }
 
@@ -475,29 +472,38 @@ h1 + p {
 .body__head {
   text-align: center;
   flex-direction: column;
-}
-
-.main__head_large {
   background-color: palegoldenrod;
   width: 60%;
 }
 
-.main__head_small {
+.body__aside {
+  text-align: center;
+  flex-direction: column;
   background-color: palegreen;
   width: 40%;
 }
 
-.main__title_bold {
+.aside__title {
   margin-top: 10px;
   margin-bottom: 20px;
   font-weight: bold;
 }
 
-.body__content {
+.head__title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.head__content {
   display: flex;
 }
 
-.body__content_white {
+.head__substance {
+  display: flex;
+}
+
+.body__content {
   margin: 10px;
   padding: 20px;
   background-color: white;
@@ -505,13 +511,17 @@ h1 + p {
 }
 
 .content__info-text {
+  background-color:sandybrown;
   width: 100%;
   margin: 10px;
   padding: 10px;
 }
 
-.content__info-text_yellow {
+.substance__info-text {
   background-color:sandybrown;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
 }
 
 /* Секция 11 */
@@ -578,7 +588,10 @@ h1 + p {
 /* 1-способ (для всех сторон), 
 2 -(верх-низ, лево-право) , 
 3 -(15верх, 24низ, 0лп), 
-4 -(верх, право, низ, лево)*/
+4 -(верх, право, низ, лево)
+
+margin 0 auto - заполнил весь контейнер
+*/
 
 .box__indent_padding{ /* padding - внутренний отступ */
   background-color: chocolate;
@@ -587,7 +600,7 @@ h1 + p {
 
 .box__indent_margin{ /* margin - внешний блок */
   background-color: yellowgreen;
-  margin: 10px 20px 30px 40px;
+  margin: 0 auto;
 }
 
 /* Секция 14 */
