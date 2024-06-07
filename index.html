@@ -7,23 +7,24 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="section_one">
-      <p>Список покупок:</p>
+    <section class="section section_one">
+    <div class="one-section">  
+      <b>Список покупок:</b>
       <ul>
         <li>Хлеб</li>
         <li>Масло</li>
         <li>Молоко</li>
       </ul>
     </div>
-    <div>
-      <p>Список покупок:</p>
+    <div class="one-section">
+      <b>Список покупок:</b>
       <ol start="3">
         <li>Хлеб</li>
         <li>Масло</li>
         <li>Молоко</li>
       </ol>
     </div>
-    <div>
+    <div class="one-section">
       <dl>
         <dt>HTML</dt>
           <dd>Язык гипертекстовой разметки, служит для создания HTML страниц</dd>
@@ -32,7 +33,7 @@
       </dl>
     </section>
 
-    <section class="section_two">
+    <section class="section section_two">
       <div class="margin">
         <input placeholder="Плейсхолдер">
       </div>
@@ -56,7 +57,7 @@
       </div>
     </section>
 
-    <section class="section_three">
+    <section class="section section_three">
       <table class="table_one margin">
         <tr>
           <th>ячейка 1</th>
@@ -138,8 +139,8 @@
       </table>
     </section>
 
-    <section class="section_four">
-      <div class="text margin normal">
+    <section class="section section_four">
+      <div class="text-block margin normal">
         HTML (Hypertext Markup Language) - это код,
          который используется для структурирования и 
          отображения веб-страницы и её контента. 
@@ -148,7 +149,11 @@
          списков или с использованием изображений и 
          таблиц данных.
       </div>
-      <div class="text margin nowrap">
+      <div class="text-block margin nowrap">
+        HTML (Hypertext Markup Language) - это код,
+         который
+      </div>
+      <div class="text-block margin pre">
         HTML (Hypertext Markup Language) - это код,
          который используется для структурирования и 
          отображения веб-страницы и её контента. 
@@ -157,16 +162,7 @@
          списков или с использованием изображений и 
          таблиц данных.
       </div>
-      <div class="text margin pre">
-        HTML (Hypertext Markup Language) - это код,
-         который используется для структурирования и 
-         отображения веб-страницы и её контента. 
-         Например, контент может быть структурирован 
-         внутри множества параграфов, маркированных 
-         списков или с использованием изображений и 
-         таблиц данных.
-      </div>
-      <div class="text margin pre-wrap">
+      <div class="text-block margin pre-wrap">
         HTML (Hypertext Markup Language) - это код,
          который используется для структурирования и 
          отображения веб-страницы и её контента. 
@@ -177,94 +173,348 @@
       </div>
     </section>
 
-    <section class="section_five">
-      <p class="p border">Это p</p>
-      <div class="div border">Это div</div>
-      <span class="span border">Это span</span>
-      <input class="input" placeholder="Это input">
-      <h3 class="h3 border">Это h3</h3>
-      <button class="button border">Это button</button>
+    <section class="section section_five">
+      <span>Section five (5)</span>
       <div>
-        <section class="section border">Это section 1</section>
-        <section class="section border">Это section 2</section>
-      </div>
-    </section>
-
-    <section class="section_six">
-      <div>
-        <p>Селектор 1</p>
-      </div>
-      <div>
-        <p>Селектор 1</p>
-      </div>
-      <div>
-        <h2>Селектор 2</h2>
-      </div>
-      <div>
-        <h2>Селектор 2</h2>
-      </div>
-      <div id="test">
-        <p>Селектор 3</p>
-        <p>Селектор 3</p>
-      </div>
-      <div id="test">
-        <h2>Селектор 4</h2>
-        <h2>Селектор 4</h2>
-      </div>
-      <h1 class="bbb">Селектор 5</h1>
-      <span class="bbb">Селектор 5</span>
-      <div id="test">
-        <h2 class="bbb">Селектор 6</h2>
-        <p class="bbb">Селектор 6</p>
-      </div>
-      <!--<p class="bbb">Селектор 7</p>
-      <p class="bbb">Селектор 7</p>
-      <p class="bbb">Селектор 7</p>
-      <h2 id="test" class="bbb">Селектор 8</h2>
-      <h2 id="test" class="bbb">Селектор 8</h2>
-      Пропуск до 19, указать весомость
-      -->
-
-      <p data-value="45">Селектор 19</p>
-      <div class="parent1">
-        <div class="child1">
-          Селектор 20
+        <p class="p border margin">Это p</p>
+        <div class="div border margin">Это div</div>
+        <span class="span border margin">Это span</span>
+        <input class="input margin" placeholder="Это input">
+        <h3 class="h3 border margin">Это h3</h3>
+        <button class="button border margin">Это button</button>
+        <div>
+          <section class="section-block border margin">Это section 1</section>
+          <section class="section-block border margin">Это section 2</section>
         </div>
       </div>
-      <p class="text1 active">Селектор 21</p>
     </section>
-    <!--Доделать-->
 
-    <section class="section_seven">
-      <div class="parent margin">
+    <section class="section section_six">
+      <h4 class="bbb">5</h4>
+      <div id="test">
+        <p>6</p>
+        <h2>6</h2>
+        <h1 class="bbb">6</h1>
+      </div>
+      <p class="bbb">7</p>
+      <h2 class="bbb" id="test">8</h2>
+      <div id="test">
+        <p>9</p>
+        <p class="bbb">9</p>
+        <p class="bbb">9</p>
+      </div>
+      <div class="xxx">10</div>
+      <p class="bbb">11</p>
+      <h2 class="xxx">11</h2>
+      <p>11</p>
+      <div id="test">
+        <p class="bbb">12 b</p>
+        <p>12 e</p>
+        <p class="xxx">12 x</p>
+      </div>
+      <p class="fff">10</p>
+      <div class="fff">
+        <h2 class="bbb">4</h2>
+        <p class="bbb">1</p>
+        <h1 class="bbb">2</h1>
+        <h2 class="bbb">3</h2>
+        <h2 class="avb">4</h2>
+        <p>14</p>
+        <p class="fff">10</p>
+      </div>
+      <span>3</span>
+      <div data-input="45">456</div>
+      <div class="parent_c">
+        <div class="child_c">
+          123
+        </div>
+      </div>
+      <div class="text active">1</div>
+      <ul id="my-list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+      <div class="twentyFive">
+        <img alt="0">
+        <p>1</p>
+        <h1>2</h1>
+        <p>3</p>
+        <div>4</div>
+        <p>5</p>
+        <img alt="6">
+        <p>7</p>
+        <p>8</p>
+        <div>9</div>
+      </div>
+    </section>
+
+    <section class="section section_seven">
+      <span>Section seven (7)</span>
+      <div class="parent">
         <div class="child_1 child">child_1</div>
         <div class="child_2 child">child_2</div>
-        <!--При absolute спозиционируется относительно parent 
-          (ближайшего родителя)-->
-        <!--При relative спозиционируется относительно занятой позиции 
-          (относительно позиции занятой в потоке)-->
+        <!--При absolute спозиционируется относительно ближайшего родителя-->
+        <!--При relative спозиционируется относительно позиции занятой в потоке-->
         <div class="child_3 child">child_3</div>
         <div class="child_4 child">child_4</div>
       </div>
-
-      <div class="image margin">
-        <img class="superman" src="/image/2f814324de68beedf0af5cc57fe04217.png">
-        <img class="potato" src="/image/b6348b4fa7594fc3b3ee923171212a45.png">
-        <img class="blue-planet" src="/image/c960a72e97ee2599726a56fe2f167b2e.png">
-        <img class="purple-planet" src="/image/8d04aaf349a0bda86d2c5ef4fb1fe47c.png">
-        <img class="rocket" src="/image/2643e41e71f7aeb1208b917691ac00b2.png">
-        <img class="yellow_planet" src="/image/e2c7320c6d95f7c752ab471f2b9ee9a9.png">
-        <img class="ufo" src="/image/e5905d9036e438b7b165d44095c107c8.png">
+      <div class="image">
+          <img class="superman" src="/image/superman.png">
+          <img class="potato" src="/image/potato.png">
+          <img class="blue-planet" src="/image/purple_planet.png">
+          <img class="purple-planet" src="/image/blue_planet.png">
+          <img class="rocket" src="/image/rocket.png">
+          <img class="yellow_planet" src="/image/yellow_planet.png">
+          <img class="ufo" src="/image/ufo.png">
       </div>
     </section>
 
-    <section class="section_nine">
-      <div class="left_block">left</div>
-      <div class="right_block">right</div>
+    <section class="section section_eight">
+      <span>Section eight (8)</span>
+      <div class="flex-container">
+        <div class="block-box-sizing left-block"></div>
+        <div class="block-box-sizing right-block"></div>
+      </div>
     </section>
 
-    <section class="ten">
-      
+    <section class="section section-nine">
+      <span>Section nine (9)</span>
+      <div class="block wrap-option">
+        <div class="container small"></div>
+        <div class="container medium"></div>
+        <div class="container small"></div>
+        <div class="container medium"></div>
+        <div class="container small"></div>
+        <div class="container medium"></div>
+        <div class="container small"></div>
+      </div>
+      <div class="block justify-start">
+        <div class="container medium"></div>
+        <div class="container small"></div>
+        <div class="container large"></div>
+      </div>
+      <div class="block justify-end">
+        <div class="container medium"></div>
+        <div class="container small"></div>
+        <div class="container large"></div>
+      </div>
+      <div class="block justify-center">
+        <div class="container medium"></div>
+        <div class="container small"></div>
+        <div class="container large"></div>
+      </div>
+      <div class="block justify-space-between">
+        <div class="container medium"></div>
+        <div class="container small"></div>
+        <div class="container large"></div>
+      </div>
+      <div class="block justify-space-around">
+        <div class="container medium"></div>
+        <div class="container small"></div>
+        <div class="container large"></div>
+      </div>
+      <div class="block-with-align">
+        <div class="block align-start">
+          <div class="container simple"></div>
+          <div class="container long"></div>
+          <div class="container short"></div>
+          <div class="container simple"></div>
+        </div>
+        <div class="block align-end">
+          <div class="container simple"></div>
+          <div class="container long"></div>
+          <div class="container short"></div>
+          <div class="container simple"></div>
+        </div>
+        <div class="block align-center">
+          <div class="container simple"></div>
+          <div class="container long"></div>
+          <div class="container short"></div>
+          <div class="container simple"></div>
+        </div>
+        <div class="block align-stretch">
+          <div class="container"></div>
+          <div class="container"></div>
+          <div class="container"></div>
+          <div class="container"></div>
+        </div>
+        <div class="block align-baseline">
+          <div class="container simple">1</div>
+          <div class="container long">2</div>
+          <div class="container short">3</div>
+          <div class="container simple">4</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-ten">
+      <p>Секция №10</p>
+      <header class="header">
+        <div class="header__body">
+          <div class="header__text header__text_bold">[Шапка страницы]</div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__body">
+          <div class="main__head main__head_large">
+            <div class="main__title main__title_bold">[Основная часть]</div>
+            <div class="main__content">
+              <div class="main__info-text main__info-text_yellow">[Еще 1]</div>
+              <div class="main__info-text main__info-text_yellow">[Еще 2]</div>
+            </div>
+            <div class="main__content">
+              <div class="main__info-text main__info-text_yellow">[Еще 3]</div>
+            </div>
+          </div>
+          <div class="main__head main__head_small">
+            <div class="main__title main__title_bold">[Боковая область]</div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__body">
+          <div class="footer__content">[Секция футера 1]</div>
+          <div class="footer__content">[Секция футера 2]</div>
+          <div class="footer__content">[Секция футера 3]</div>
+          <div class="footer__content">[Секция футера 4]</div>
+        </div>
+      </footer>
+    </section>
+
+    <section class="section section-eleven">
+      <p>Секция №11</p>
+      <div class="parent-block">
+          <div class="parent-block__section parent-block__section_flex">
+          <div class="block-child">
+            <div class="child-block__section">child with flex</div>
+          </div>
+        </div>
+      </div>
+      <div class="parent-block">
+          <div class="parent-block__section parent-block__section_position">
+          <div class="block-child">
+            <div class="child-block__section child-block__section_position">child with position</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-twelwe">
+      <p>Секция №12</p>
+      <div class="background">
+        <div class="background__image"></div>
+      </div>
+    </section>
+
+    <section class="section section-therdteen">
+      <p>Секция №13</p>
+      <div class="box">
+        <div class="box__border">
+          <div class="box__indent box__indent_padding">1 - padding</div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box__border">
+          <div class="box__indent box__indent_margin">2 - margin</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-fourteen">
+      <p>Секция №14</p>
+      <div class="grid">
+        <div class="grid__body grid__body_areas">
+          <div class="grid__block grid__nav_areas">NAV</div>
+          <div class="grid__block grid__header_areas">HEADER</div>
+          <div class="grid__block grid__main_areas">MAIN</div>
+          <div class="grid__block grid__section_areas">SECTION</div>
+          <div class="grid__block grid__aside_areas">ASIDE</div>
+          <div class="grid__block grid__footer_areas">FOOTER</div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid__body grid__body_line">
+          <div class="grid__block grid__nav">NAV</div>
+          <div class="grid__block grid__header">HEADER</div>
+          <div class="grid__block grid__main">MAIN</div>
+          <div class="grid__block grid__section">SECTION</div>
+          <div class="grid__block grid__aside">ASIDE</div>
+          <div class="grid__block grid__footer">FOOTER</div>
+      </div>
+    </div>
+    </section>
+
+    <section class="section section-fifteen">
+      <p>Секция №15</p>
+      <div class="grid-section grid-section_align-center">
+        <div class="grid-section__container">1</div>
+        <div class="grid-section__container">2</div>
+        <div class="grid-section__container">3</div>
+        <div class="grid-section__container">4</div>
+        <div class="grid-section__container">5</div>
+        <div class="grid-section__container">6</div>
+        <div class="grid-section__container">7</div>
+        <div class="grid-section__container">8</div>
+        <div class="grid-section__container">9</div>
+      </div>
+      <div class="grid-section grid-section_grid-align-center">
+        <div class="grid-section__container">1</div>
+        <div class="grid-section__container">2</div>
+        <div class="grid-section__container">3</div>
+        <div class="grid-section__container">4</div>
+        <div class="grid-section__container">5</div>
+        <div class="grid-section__container">6</div>
+        <div class="grid-section__container">7</div>
+        <div class="grid-section__container">8</div>
+        <div class="grid-section__container">9</div>
+      </div>
+      <div class="grid-section">
+        <div class="grid-section__container">1</div>
+        <div class="grid-section__container">2</div>
+        <div class="grid-section__container">3</div>
+        <div class="grid-section__container">4</div>
+        <div class="grid-section__container grid-section__container_child-5">5</div>
+        <div class="grid-section__container">6</div>
+        <div class="grid-section__container">7</div>
+        <div class="grid-section__container">8</div>
+        <div class="grid-section__container">9</div>
+      </div>
+
+
+      <div class="flex-section flex-section_align-center">
+        <div class="flex-section__container">1</div>
+        <div class="flex-section__container">2</div>
+        <div class="flex-section__container">3</div>
+        <div class="flex-section__container">4</div>
+        <div class="flex-section__container">5</div>
+        <div class="flex-section__container">6</div>
+        <div class="flex-section__container">7</div>
+        <div class="flex-section__container">8</div>
+        <div class="flex-section__container">9</div>
+      </div>
+      <div class="flex-section flex-section_flex-align-center">
+        <div class="flex-section__container">1</div>
+        <div class="flex-section__container">2</div>
+        <div class="flex-section__container">3</div>
+        <div class="flex-section__container">4</div>
+        <div class="flex-section__container">5</div>
+        <div class="flex-section__container">6</div>
+        <div class="flex-section__container">7</div>
+        <div class="flex-section__container">8</div>
+        <div class="flex-section__container">9</div>
+      </div>
+      <div class="flex-section">
+        <div class="flex-section__container">1</div>
+        <div class="flex-section__container">2</div>
+        <div class="flex-section__container">3</div>
+        <div class="flex-section__container">4</div>
+        <div class="flex-section__container">5</div>
+        <div class="flex-section__container">6</div>
+        <div class="flex-section__container">7</div>
+        <div class="flex-section__container">8</div>
+        <div class="flex-section__container flex-section__container-child-9">9</div>
+      </div>
     </section>
   </body>
 </html>
