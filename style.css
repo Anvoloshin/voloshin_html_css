@@ -23,7 +23,7 @@
   margin-bottom: 10px;
 }
 
-.section > p {
+.section__text {
   font-size: 24px;
   font-weight: bold;
 }
@@ -445,7 +445,7 @@ h1 + p {
 
 /*  Секция 10 */
 
-.footer__content {
+.body__content {
   margin: 10px;
   padding: 20px;
   background-color: white;
@@ -465,11 +465,11 @@ h1 + p {
   width: 100%;
 }
 
-.header__text {
+.body__text {
   margin: 10px;
 }
 
-.header__text_bold {
+.body__text_bold {
   font-weight: bold;
 }
 
@@ -477,38 +477,38 @@ h1 + p {
   display: flex;
 }
 
-.main__head {
+.body__head {
   text-align: center;
   flex-direction: column;
 }
 
-.main__head_large {
+.body__head_large {
   background-color: palegoldenrod;
   width: 60%;
 }
 
-.main__head_small {
+.body__head_small {
   background-color: palegreen;
   width: 40%;
 }
 
-.main__title_bold {
+.head__title_bold {
   margin-top: 10px;
   margin-bottom: 20px;
   font-weight: bold;
 }
 
-.main__content {
+.head__content {
   display: flex;
 }
 
-.main__info-text {
+.content__info-text {
   width: 100%;
   margin: 10px;
   padding: 10px;
 }
 
-.main__info-text_yellow {
+.content__info-text_yellow {
   background-color:sandybrown;
 }
 
