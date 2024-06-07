@@ -23,7 +23,7 @@
   margin-bottom: 10px;
 }
 
-.section__text {
+.section > p {
   font-size: 24px;
   font-weight: bold;
 }
@@ -445,12 +445,7 @@ h1 + p {
 
 /*  Секция 10 */
 
-.body__content {
-  margin: 10px;
-  padding: 20px;
-  background-color: white;
-  width: 100%;
-}
+
 
 .footer__body {
   display: flex;
@@ -482,24 +477,31 @@ h1 + p {
   flex-direction: column;
 }
 
-.body__head_large {
+.main__head_large {
   background-color: palegoldenrod;
   width: 60%;
 }
 
-.body__head_small {
+.main__head_small {
   background-color: palegreen;
   width: 40%;
 }
 
-.head__title_bold {
+.main__title_bold {
   margin-top: 10px;
   margin-bottom: 20px;
   font-weight: bold;
 }
 
-.head__content {
+.body__content {
   display: flex;
+}
+
+.body__content_white {
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  width: 100%;
 }
 
 .content__info-text {
