@@ -221,7 +221,7 @@ h1 + p {
   background-color: aqua;
 } /* 0/0/0/2 */
 
-div ~ p {
+.section-six div ~ p {
   background-color: red;
 } /* 0/0/0/2 */
 
@@ -336,11 +336,19 @@ div ~ p {
 
 /* Секция 9*/
 
+@media (min-width: 640px) {
+
+}
+
+@media (min-width: 1000px) {
+
+}
+
 .block {
   display: flex;
   grid-gap: 20px;
   background-color: mediumpurple;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 20px;
 }
 
@@ -399,7 +407,7 @@ div ~ p {
 }
 
 .container.small {
-  width: 100px;
+  width: 10%;
 }
 
 .container.medium {
@@ -411,7 +419,7 @@ div ~ p {
 }
 
 .container.short {
-  height: 10%px;
+  height: 100px;
   padding-top: 30px;
 }
 
@@ -590,12 +598,18 @@ div ~ p {
   margin-bottom: 20px;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 640px) {
   .grid__body {
     grid-template-columns: repeat(3, 200px);
     grid-template-rows: repeat(4, 100px);
   }
-  
+}
+
+@media (min-width: 1000px) {
+  .grid__body {
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 150px);
+  }
 }
 
 .grid__body_areas {
@@ -655,7 +669,7 @@ div ~ p {
 
 .grid-section {
 /*
-aligh - вспомог. ось
+align - вспомог. ось
 justify - основная ось
 place - для всех осей
 
@@ -687,12 +701,22 @@ self - ячейка */
   justify-self: center;
 }
 
+/*
+align - вспом. ось
+justify - главная ось
+place - для работы с 2 осями
+
+item - все
+content - все
+self - один элемент */
+
 .flex-section {
   display: flex;
   width: 250px;
   height: 250px;
   grid-gap: 20px;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .flex-section_align-center {
@@ -715,4 +739,48 @@ self - ячейка */
 .flex-section__container-child-9 {
   margin-left: auto;
   align-self: flex-end;
+}
+
+@media (min-width: 640px) {
+  .grid-section {
+    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(3, 150px);
+    }
+
+  .grid-section__container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .flex-section {
+    width: 400px;
+    height: 400px;
+  }
+
+  .flex-section__container {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid-section {
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(3, 200px);
+    }
+
+  .grid-section__container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .flex-section {
+    width: 600px;
+    height: 600px;
+  }
+
+  .flex-section__container {
+    width: 150px;
+    height: 150px;
+  }
 }
