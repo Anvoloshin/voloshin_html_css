@@ -338,14 +338,6 @@ h1 + p {
 
 /* Секция 9*/
 
-@media (min-width: 640px) {
-
-}
-
-@media (min-width: 1000px) {
-
-}
-
 .block {
   display: flex;
   grid-gap: 20px;
@@ -445,7 +437,7 @@ h1 + p {
   width: fit-content;
 }
 
-/*  Секция 10 */
+/* Секция 10 */
 
 .footer__body {
   display: flex;
@@ -570,6 +562,14 @@ h1 + p {
     bottom -70px left -120px;
   background-repeat: no-repeat;
 }
+
+/*
+    url('background-image1.jpg') no-repeat center center,
+    url('background-image2.jpg') no-repeat top left, 
+*/
+
+
+
 
 /* Секция 13 */
 
@@ -704,16 +704,15 @@ self - ячейка */
 }
 
 .grid-section_align-center {
-  place-items: center center;
+  place-items: center;
 }
 
 .grid-section_grid-align-center {
-  place-content: center center;
+  place-content: center;
 }
 
 .grid-section__container_child-5 {
-  align-self: center;
-  justify-self: center;
+  place-self: center;
 }
 
 /*
