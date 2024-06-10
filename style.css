@@ -646,58 +646,68 @@ margin 0 auto - заполнил весь контейнер
   }
 }
 
-.line__block_nav {
+.line__nav {
   grid-row: 1 / 5;
-}
-
-.line__block_header {
-  grid-column: 2 / 4;
-}
-
-.line__block_aside {
-  grid-column: 3 / 4;
-  grid-row: 2 / 4;
-}
-
-.line__block_footer {
-  grid-column: 2 / 4;
-}
-
-.areas__block {
-  background-color: lightseagreen;
-}
-
-.line__block {
   background-color: lightsalmon;
 }
 
-.areas__block_nav {
+.line__header {
+  grid-column: 2 / 4;
+  background-color: lightsalmon;
+}
+
+.line__aside {
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+  background-color: lightsalmon;
+}
+
+.line__footer {
+  grid-column: 2 / 4;
+  background-color: lightsalmon;
+}
+
+.line__main {
+  background-color: lightsalmon;
+}
+
+.line__section {
+  background-color: lightsalmon;
+}
+
+.areas__nav {
   grid-area: nav;
+  background-color: lightseagreen;
 }
 
-.areas__block_header {
+.areas__header {
   grid-area: header;
+  background-color: lightseagreen;
 }
 
-.areas__block_aside {
+.areas__aside {
   grid-area: aside;
+  background-color: lightseagreen;
 }
 
-.areas__block_footer {
+.areas__footer {
   grid-area: footer;
+  background-color: lightseagreen;
 }
 
-.areas__block_main {
+.areas__main {
   grid-area: main;
+  background-color: lightseagreen;
 }
 
-.areas__block_section {
+.areas__section {
   grid-area: section;
+  background-color: lightseagreen;
 }
 
 /* Секция 15 */
 
-.grid-section {
+.grid-section-items {
 /*
 align - вспомог. ось
 justify - основная ось
@@ -711,6 +721,18 @@ self - ячейка */
   grid-template-columns: repeat(3, 80px);
 }
 
+.grid-section-content {
+  display: grid;
+  grid-template-rows: repeat(3, 80px);
+  grid-template-columns: repeat(3, 80px);
+}
+
+.grid-section {
+  display: grid;
+  grid-template-rows: repeat(3, 80px);
+  grid-template-columns: repeat(3, 80px);
+}
+
 .grid-section__container {
   border: 1px solid black;
   background-color: red;
@@ -718,11 +740,25 @@ self - ячейка */
   height: 50px;
 }
 
-.grid-section_align-center {
+.grid-section-items__container {
+  border: 1px solid black;
+  background-color: red;
+  width: 50px;
+  height: 50px;
+}
+
+.grid-section-content__container {
+  border: 1px solid black;
+  background-color: red;
+  width: 50px;
+  height: 50px;
+}
+
+.section-fifteen__grid-section-items {
   place-items: center;
 }
 
-.grid-section_grid-align-center {
+.section-fifteen__grid-section-content {
   place-content: center;
 }
 
@@ -739,7 +775,29 @@ item - все
 content - все
 self - один элемент */
 
-.flex-section {
+.section-fifteen__flex-align-center {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  grid-gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.section-fifteen__flex-center {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  grid-gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-fifteen__flex-section {
   display: flex;
   width: 250px;
   height: 250px;
@@ -748,14 +806,18 @@ self - один элемент */
   margin-bottom: 10px;
 }
 
-.flex-section_align-center {
-  justify-content: center;
-  align-items: center;
+.flex-center__container {
+  border: 1px solid black;
+  background-color: red;
+  width: 50px;
+  height: 50px;
 }
 
-.flex-section_flex-align-center {
-  justify-content: flex-end;
-  align-items: flex-end;
+.flex-align-center__container {
+  border: 1px solid black;
+  background-color: red;
+  width: 50px;
+  height: 50px;
 }
 
 .flex-section__container {
@@ -765,7 +827,7 @@ self - один элемент */
   height: 50px;
 }
 
-.flex-section__container-child-9 {
+.flex-section__container_child-9 {
   margin-left: auto;
   align-self: flex-end;
 }
@@ -774,9 +836,29 @@ self - один элемент */
   .grid-section {
     grid-template-rows: repeat(3, 150px);
     grid-template-columns: repeat(3, 150px);
-    }
+  }
+
+  .grid-section-content {
+    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(3, 150px);
+  }
+
+  .grid-section-items {
+    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(3, 150px);
+  }
 
   .grid-section__container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .grid-section-items__container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .grid-section-content__container {
     width: 100px;
     height: 100px;
   }
@@ -784,6 +866,26 @@ self - один элемент */
   .flex-section {
     width: 400px;
     height: 400px;
+  }
+
+  .flex-center {
+    width: 400px;
+    height: 400px;
+  }
+
+  .flex-align-center {
+    width: 400px;
+    height: 400px;
+  }
+
+  .flex-center__container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .flex-align-center__container {
+    width: 100px;
+    height: 100px;
   }
 
   .flex-section__container {
@@ -796,16 +898,56 @@ self - один элемент */
   .grid-section {
     grid-template-rows: repeat(3, 200px);
     grid-template-columns: repeat(3, 200px);
-    }
+  }
+
+  .grid-section-items {
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(3, 200px);
+  }
+
+  .grid-section-content {
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(3, 200px);
+  }
 
   .grid-section__container {
     width: 150px;
     height: 150px;
   }
 
+  .grid-section-items__container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .grid-section-content__container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .flex-center {
+    width: 600px;
+    height: 600px;
+  }
+
+  .flex-align-center {
+    width: 600px;
+    height: 600px;
+  }
+
   .flex-section {
     width: 600px;
     height: 600px;
+  }
+
+  .flex-center__container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .flex-align-center__container {
+    width: 150px;
+    height: 150px;
   }
 
   .flex-section__container {
