@@ -6,7 +6,7 @@
   padding-bottom: 20px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  background-color: #F1E9E9;
+  background-color: lightgrey;
 }
 
 * {
@@ -34,6 +34,11 @@
   margin: 20px;
 }
 
+.section-two-element {
+  height: 30px;
+  width: 200px;
+}
+
 /* Секция 3*/
 
 dd {
@@ -52,7 +57,9 @@ table {
 
 .table_one td {
   text-align: left;
-  padding: 20px 20px 20px 0px;
+  /* padding: 20px 20px 20px 0px; */
+  padding: 20px;
+  padding-left: 0px;
 }
 
 .table_one th {
@@ -99,41 +106,35 @@ table {
 
 
 /* ширину секции задать*/
-.p {
+.p, 
+.div,
+.span,
+.h3,
+.button,
+.section-block {
   height: 50px;
 }
 
-.div {
-  height: 50px;
-}
-
-.span {
+.span,
+.section-block {
   display: inline-block; 
-  height: 50px;
   width: 150px;
 }
 
-.h3 {
-  height: 50px;
-}
-
 .button {
-  height: 50px;
   width: 200px;
   margin-bottom: 10px;
 }
 
-.section-block {
-  display: inline-block;
-  height: 50px;
-  width: 150px;
+.range {
+  width: 30%;
 }
 
 /* Секция 6 */
 
 .section-six div p {
   background-color: hotpink;
-} /* 0/0/0/2 */
+} /* 0/0/1/2 */
 
 div h2 {
   background-color: greenyellow;
@@ -157,7 +158,7 @@ div h2 {
 
 p.bbb{
   background-color: paleturquoise;
-} /* 0/0/1/0 */
+} /* 0/0/1/1 */
 
 h2.bbb#test{
   background-color: palegreen;
@@ -169,15 +170,15 @@ h2.bbb#test{
 
 .xxx, .bbb {
   background-color: orangered;
-} /* 0/0/2/0 */
+} /* 0/0/1/0 */
 
 h2.xxx, p.bbb {
   background-color: orange;
-} /* 0/0/2/2 */
+} /* 0/0/1/1 */
 
 #test > p.xxx,p.bbb {
   background-color: olive;
-} /* 0/1/2/2 */
+} /* 0/1/1/1 */
 
 .fff {
   background-color: indigo;
@@ -217,7 +218,7 @@ p.fff {
 
 #my-list li:nth-child(2) {
   background-color: rosybrown;
-} /* 0/1/1/0 */
+} /* 0/1/1/1 */
 
 h1 + p {
   background-color: aqua;
@@ -225,7 +226,7 @@ h1 + p {
 
 .section-six div ~ p {
   background-color: red;
-} /* 0/0/0/2 */
+} /* 0/0/1/2 */
 
 .twentyFive > :not(img){
   background-color: blueviolet;
@@ -238,7 +239,7 @@ h1 + p {
   flex-wrap: wrap;
   width: 500px;
   height: 500px;
-  background-color: rgb(90, 179, 87);
+  background-color: lightgreen;
   position: relative;
 }
 
@@ -246,7 +247,7 @@ h1 + p {
   margin: 30px;
   width: 170px;
   height: 170px;
-  background-color: rgb(24, 141, 209);
+  background-color: lightblue;
 }
 
 .child_1, .child_3, .child_4 {
@@ -265,7 +266,7 @@ h1 + p {
 */
 
 .image {
-  background-image: url(/image/cosmos.jpeg);
+  background-image: url('./image/cosmos.jpeg');
   width: 600px;
   height: 400px;
   position: relative;;
@@ -326,10 +327,6 @@ h1 + p {
   height: 200px;
   background-color: pink;
   border: 5px solid black;
-}
-
-.left-block {
-  box-sizing: content-box;
 }
 
 .right-block {
@@ -518,30 +515,34 @@ h1 + p {
 
 /* Секция 11 */
 
-.parent-block__section {
+.content-box__parent-flex {
   width: 500px;
   height: 300px;
   margin-bottom: 20px;
   background-color: darkgray;
-}
-
-.parent-block__section_flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.parent-block__section_position {
+.content-box__parent-position {
+  width: 500px;
+  height: 300px;
+  margin-bottom: 20px;
+  background-color: darkgray;
   position: relative;
 }
 
-.child-block__section {
+.child-block__flex {
   width: 150px;
   height: 100px;
   background-color: brown;
 }
 
-.child-block__section_position {
+.child-block__position {
+  width: 150px;
+  height: 100px;
+  background-color: brown;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -553,14 +554,10 @@ h1 + p {
 .background__image {
   width: 500px;
   height: 300px;
-  background-color: aliceblue;
-  background-image:
-    url(/image/target.png),
-    url(/image/target.png);
-  background-position:
-    top -55px right -70px,
-    bottom -70px left -120px;
-  background-repeat: no-repeat;
+  background:
+    url('./image/target.png') no-repeat top -55px right -70px,
+    url('./image/target.png') no-repeat bottom -70px left -120px,
+    aliceblue;
 }
 
 /*
@@ -580,32 +577,31 @@ h1 + p {
   margin-bottom: 10px;
 }
 
-.box__indent {
-  width: 200px;
-  height: 200px;
-}
-
 /* 1-способ (для всех сторон), 
 2 -(верх-низ, лево-право) , 
-3 -(15верх, 24низ, 0лп), 
+3 -(15верх, 24низ, 0лево и право), 
 4 -(верх, право, низ, лево)
 
 margin 0 auto - заполнил весь контейнер
 */
 
-.box__indent_padding{ /* padding - внутренний отступ */
+.border__padding{ /* padding - внутренний отступ */
+  width: 200px;
+  height: 200px;
   background-color: chocolate;
   padding: 10px 20px 30px 40px;
 }
 
-.box__indent_margin{ /* margin - внешний блок */
+.border__margin{ /* margin - внешний блок */
+  width: 200px;
+  height: 200px;
   background-color: yellowgreen;
-  margin: 0 auto;
+  margin: 0 10px;
 }
 
 /* Секция 14 */
 
-.grid__body {
+.grid__line {
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(4, 50px);
@@ -613,70 +609,89 @@ margin 0 auto - заполнил весь контейнер
   margin-bottom: 20px;
 }
 
+.grid__areas {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(4, 50px);
+  grid-gap: 10px;
+  margin-bottom: 20px;
+  grid-template-areas:
+  "nav header header"
+  "nav main aside"
+  "nav section aside"
+  "nav footer footer";
+}
+
 @media (min-width: 640px) {
-  .grid__body {
+  .grid__line {
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(4, 100px);
+  }
+
+  .grid__areas {
     grid-template-columns: repeat(3, 200px);
     grid-template-rows: repeat(4, 100px);
   }
 }
 
 @media (min-width: 1000px) {
-  .grid__body {
+  .grid__line {
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 150px);
+  }
+
+  .grid__areas {
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(4, 150px);
   }
 }
 
-.grid__body_areas {
-  grid-template-areas:
-    "nav header header"
-    "nav main aside"
-    "nav section aside"
-    "nav footer footer";
-}
-
-.grid__nav {
+.line__block_nav {
   grid-row: 1 / 5;
 }
 
-.grid__header {
+.line__block_header {
   grid-column: 2 / 4;
 }
 
-.grid__aside {
+.line__block_aside {
   grid-column: 3 / 4;
   grid-row: 2 / 4;
 }
 
-.grid__footer {
+.line__block_footer {
   grid-column: 2 / 4;
 }
 
-.grid__block {
-  background-color: rgb(40, 184, 136);
+.areas__block {
+  background-color: lightseagreen;
 }
 
-.grid__nav_areas {
+.line__block {
+  background-color: lightsalmon;
+}
+
+.areas__block_nav {
   grid-area: nav;
 }
 
-.grid__header_areas {
+.areas__block_header {
   grid-area: header;
 }
 
-.grid__aside_areas {
+.areas__block_aside {
   grid-area: aside;
 }
 
-.grid__footer_areas {
+.areas__block_footer {
   grid-area: footer;
 }
 
-.grid__main_areas {
+.areas__block_main {
   grid-area: main;
 }
 
-.grid__section_areas {
+.areas__block_section {
   grid-area: section;
 }
 
